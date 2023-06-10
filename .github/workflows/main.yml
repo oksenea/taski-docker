@@ -18,7 +18,7 @@ jobs:
           POSTGRES_USER: django_user
           POSTGRES_PASSWORD: django_password
           POSTGRES_DB: django_db
-          SECRET_KEY: SECRET_KEY
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
           DEBUG: True
         ports:
           - 5432:5432
